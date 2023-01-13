@@ -5,8 +5,14 @@
 [Link] (https://code.visualstudio.com/)
 2. Depending on the device that you are downloading this on, be sure to follow the different directions. 
 4. Once this has been installed you should be able to view the page seen below. 
-![Image] (http://VSCstarterpage.png)
+![Image](http://VSCstarterpage.png)
+
 
 ## Remotely Connecting 
+1. Once you have both VScode installed, open a terminal in VScode. In the terminal using your own personal identification letters for the class you will be able to access your personal information from that account on a different system. 
+2. In the terminal you want to type out `ssh cs15lwi23amb@ieng6.ucsd.edu`
+3. The first nine 
+
+
 
 ## Trying Some Commands 
