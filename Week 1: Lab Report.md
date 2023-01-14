@@ -16,5 +16,13 @@
 ![Image](RemotelyConnecting.png)
 Now you have sucessfully remotely connected! 
 ## Trying Some Commands 
+1. Now that you are in the terminal you can try running different commands.
+   - `cd` 
+   - `ls`
+   - `pwd`
+   - `cd ..`
+   - `cat /home/linux/ieng6/cs15lwi23/public/hello.txt`
+   - 
+![Image](RunningCommands.png)
 
 
