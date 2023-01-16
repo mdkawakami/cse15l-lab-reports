@@ -28,5 +28,5 @@ Now you have sucessfully remotely connected!
 
 ![Image](RunningCommands.png)
 - Reminders:
-   - Be sure to account for spaces when necessary because it could affect if the command. 
+   - Be sure to account for spaces when necessary because it could affect the command. 
 
