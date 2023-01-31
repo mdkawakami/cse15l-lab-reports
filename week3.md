@@ -18,14 +18,17 @@
 ## Part 2: Syptoms of Bugs (week 3)
 * Buggy program from lab 3: 
   - method `reversed(int[] arr)` 
-test that will fail 
+
+The symptom was that this test failed and since the test was created to find if there was a bug in the code. The bug in the program `reversed` was that every one of the indexes of the arr were being set to 0 and the newArr was just made up of zeros. 
+
 ```
 @Test
   public void testReversed2(){
     int[] input = {1,2,3,4};
     assertArrayEquals(new int[]{4,3,2,1}, ArrayExamples.reversed(input));
 ```
-test that will work accidentaly 
+
+This test does not induce a failure even though the code actually contain bugs in it. 
 
 ```@Test
   public void testReversed() {
@@ -33,6 +36,9 @@ test that will work accidentaly
     assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
   }
 ```
+
+This shows that the first tester that is run passes the test while the other tester shows the the expected is not what is actually returned. 
+![JUnitTester](junitTesting.png)
 
 buggy code
 ```
@@ -54,6 +60,9 @@ static int[] reversed(int[] arr) {
     return newArray;
   }
 ```
+
+In order for the for the code to properly run the the new array needs to be on the left side of the = so that the old array is being put into the new array in reverse. It is taking the last element from the orginal array and adding it to the new array. and then returning the new array. Rather than, having the last half of the indexes getting set to the first half, then the first half were already changed to the last half so when it got to the last indexes they would not change. 
+
 ## Part 3: 
 In week 2 lab I learned how to build and run the server along with having the need to have a port number. The port that is identifying the specific port tthat is being run. 
 Notes:
