@@ -33,7 +33,7 @@ test that will work accidentaly
     assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
   }
 ```
-![junitTesterSS]
+
 buggy code
 ```
 static int[] reversed(int[] arr) {
