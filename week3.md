@@ -4,19 +4,19 @@
 ![StringServerCode](StringServer.png)
 ---
 ![marisa](addmessage1.png)
-* The method `String handleRequest(URI url)` is called in from the handler class. 
-  * In order to open the web server in the browser you need to compile and run with a port number and in the terminal you will be given a link to open (ex `http:localhost:300`)
-* The arguments are the server's port number and the Handler object. The `handleRequest` method will take the url in the above example `localhost:3000/add-message?s=marisa` as the parameter `URI url`. The variable `string` is an empty string in the Handler class. 
-  * The port number does not have to be a specific number but it will identify a  specific port that your web server is being run on. 
-* Due to the requests inputed into the url it will change what is added to the `string`. Once the url is split creating two separate elements in the array `parameters` will add the element `parameters[1]` into the string, which returns `marisa` on the screen. 
+- The method `String handleRequest(URI url)` is called in from the handler class. 
+  - In order to open the web server in the browser you need to compile and run with a port number and in the terminal you will be given a link to open (ex `http:localhost:300`)
+- The arguments are the server's port number and the Handler object. The `handleRequest` method will take the url in the above example `localhost:3000/add-message?s=marisa` as the parameter `URI url`. The variable `string` is an empty string in the Handler class. 
+  - The port number does not have to be a specific number but it will identify a  specific port that your web server is being run on. 
+- Due to the requests inputed into the url it will change what is added to the `string`. Once the url is split creating two separate elements in the array `parameters` will add the element `parameters[1]` into the string, which returns `marisa` on the screen. 
 ---
 ![lovesfood](addlovesfood.png)
-* Once again the method `String handleRequest(URI url)` is called in from the handler class.
-* The method `handleRequest` takes in the parameter url which for this example is `localhost:3000/add-message?s=loves food`. Since I previously added "marisa" to the string the `string` value is marisa. 
-* Due to this request again the url is split into two creating separate elements in the `parameters` array. It then takes `parameters[1]` and adds it to the string. This then changes the string to include the element from the first example `marisa` and also `loves food`. 
+- Once again the method `String handleRequest(URI url)` is called in from the handler class.
+- The method `handleRequest` takes in the parameter url which for this example is `localhost:3000/add-message?s=loves food`. Since I previously added "marisa" to the string the `string` value is marisa. 
+- Due to this request again the url is split into two creating separate elements in the `parameters` array. It then takes `parameters[1]` and adds it to the string. This then changes the string to include the element from the first example `marisa` and also `loves food`. 
 ---
 ## Part 2: Symptoms of Bugs (week 3)
-* Buggy program from lab 3: 
+- Buggy program from lab 3: 
   - method `reversed(int[] arr)` 
 
 The symptom was that this test failed and since the test was created to find if there was a bug in the code. The bug in the program `reversed` was that every one of the indexes of the arr was being set to 0 and the newArr was just made up of zeros. 
