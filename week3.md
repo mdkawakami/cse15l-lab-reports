@@ -4,8 +4,11 @@
 ![Image](StringServer.png)
 ---
 ![Image](addmessage1.png)
-* The method `String handleRequest(URI url)` is called in order to 
-* The relevant arguments that are used in the method are the = `add-message` if this is in the url then it split the url after the query and creating two parts. By doing this it will then take what is in the first element of the array and add it to the String `string`. This allows you to add whatever you like to the string that will be returned on the screen. In this example it is 
+* The method `String handleRequest(URI url)` is called in from the handler class. 
+  * In order to open the web server in the browser you need to compile and run with a port number and in the terminal you will be given a link to open (ex `http:localhost:300`)
+* The arguments are the servers port number and the Handler object. The `handleRequest` method will take the url in the above example `localhost:3000/add-message?s=marisa` as the parameter `URI url`. The variable `string` is an empty string in the Handler class. 
+  * The port number does not have to be a specific number but it will identify a specifc port that your web server is being run on. 
+* Due to the requests inputed into the url it will change what is added to the `string`. Once the url is split creating two seperate elements in the array `parameters` it will add the element `parameters[1]` into the string. Which returns `marisa` on the screen. 
 ---
 ![Image](addlovesfood.png)
 
