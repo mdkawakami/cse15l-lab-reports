@@ -1,7 +1,7 @@
 # Marisa Kawakami Week 3: Lab Report 2 - Servers and Bugs 
 
-## Part 1: Simplest Search Engine (week 2) 
-![Image](StringServer.png)
+## Part 1: String Server (week 2) 
+![StringServerCode](StringServer.png)
 ---
 ![marisa](addmessage1.png)
 * The method `String handleRequest(URI url)` is called in from the handler class. 
@@ -65,6 +65,5 @@ In order, for the code to properly run the new array needs to be on the left sid
 
 ## Part 3: 
 In week 2 lab I learned how to build and run the server just by changing the url. By doing this I was able to add to things by making edits in the url. When learning this I also learned what a port was and how it identifies the specific port that is being run. During this lab, I was able to connect the code that I was writing that affected what was run when I altered the url. Just by changing a word such as `/add-message` `/increment` `/search` I was able to change what was being looked for or what would run because of this.
-reminders:
-* In order to exit out of a loop in a server you must hit control C 
-* 
+note to self:
+* In order to exit out of a loop in a server you must hit control C
