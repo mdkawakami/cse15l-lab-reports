@@ -65,5 +65,7 @@ In order, for the code to properly run the new array needs to be on the left sid
 
 ## Part 3: 
 In week 2 lab I learned how to build and run the server just by changing the url. By doing this I was able to add to things by making edits in the url. When learning this I also learned what a port was and how it identifies the specific port that is being run. During this lab, I was able to connect the code that I was writing that affected what was run when I altered the url. Just by changing a word such as `/add-message` `/increment` `/search` I was able to change what was being looked for or what would run because of this.
+
+
 note to self:
 * In order to exit out of a loop in a server you must hit control C
