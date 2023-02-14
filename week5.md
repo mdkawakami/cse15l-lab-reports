@@ -15,7 +15,22 @@ written_2/travel_guides/berlitz2/Bahamas-History.txt:The Spaniards never bothere
 grep -R -l "Lucayans"
 written_2/travel_guides/berlitz2/Bahamas-History.txt
 ```
-he
+- `-R` is recursively reading through each of the .txt files and finding all of them that contain the string Lucayans in the data of the file. When you combine `-R` with `-l` is recusively going through the data in the directory and finding the file that contains the string. As shown in the second code block it will just return the file that has the string in it rather than the file and the sections of the daat that contains the string. This is useful when you needs to check whether a file contains a word or subject and be able to find it quickly. 
+
+```
+grep -vn "Bahamas" *.txt
+
+grep-results.txt:217:written_2/travel_guides/berlitz2/Portugal-WhatToDo.txt
+grep-results.txt:218:written_2/travel_guides/berlitz2/Portugal-WhereToGo.txt
+grep-results.txt:219:written_2/travel_guides/berlitz2/PuertoRico-History.txt
+grep-results.txt:220:written_2/travel_guides/berlitz2/PuertoRico-WhatToDo.txt
+grep-results.txt:221:written_2/travel_guides/berlitz2/PuertoRico-WhereToGo.txt
+grep-results.txt:222:written_2/travel_guides/berlitz2/Vallarta-History.txt
+grep-results.txt:223:written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt
+grep-results.txt:224:written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
+```
+- This command printed out hundreds of files that do not match the search string "Bahamas". The command `-n` is useful for returning which line the file is in. By adding the `-vn` printed all the negative results. It prints every single line that does not match the string that is being searched. By using both it will also display the line number that 
+
 
 
 
