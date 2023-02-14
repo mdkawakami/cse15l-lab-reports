@@ -1,7 +1,7 @@
 # Marisa Kawakami Week 5: Lab Report 3 - Researching Commands 
 
 ## `grep` 
-- `grep` takes a string and a file, then prints out all the lines that exist in the file that match the inputed string. 
+- `grep` takes a string and a file, then prints out all the lines that exist in the file that match the inputted string. 
     - `grep "Bahamas" *.txt` will print out all the .txt files that contains Bahamas
 - `man grep` another built-in command that can help by displaying more information about different commands. 
 
@@ -17,7 +17,7 @@ grep -R -l "Lucayans"
 
 written_2/travel_guides/berlitz2/Bahamas-History.txt
 ```
-- `-R` is recursively reading through each of the .txt files and finding all of them that contain the string Lucayans in the data of the file. When you combine `-R` with `-l` is recusively going through the data in the directory and finding the file that contains the string. As shown in the second code block it will just return the file that has the string in it rather than the file and the sections of the daat that contains the string. This is useful when you needs to check whether a file contains a word or subject and be able to find it quickly.
+- `-R` is recursively reading through each of the .txt files and finding all of them that contain the string Lucayans in the data of the file. When you combine `-R` with `-l` is recusively going through the data in the directory and finding the file that contains the string. As shown in the second code block it will just return the file that has the string in it rather than the file and the sections of the data that contains the string. This is useful when you need to check whether a file contains a word or subject and be able to find it quickly.
 [-R](https://stackoverflow.com/questions/1987926/how-do-i-recursively-grep-all-directories-and-subdirectories)
 
 ```
@@ -74,14 +74,14 @@ written_2/travel_guides/berlitz2/Bahamas-Intro.txt
 written_2/travel_guides/berlitz2/Bahamas-WhatToDo.txt
 written_2/travel_guides/berlitz2/Bahamas-WhereToGo.txt
 ```
-- `-i` This command searches through which fiels contain the string. It treats both upper and lower case letters equal so it will return the files without being case sensitive. It also will return the files if the string is only parts of the entire word. This is very helpful if you are not exactly sure how the names are types out. 
+- `-i` This command searches through which fields contain the string. It treats both upper and lower case letters equally so it will return the files without being case-sensitive. It also will return the files if the string is only part of the entire word. This is very helpful if you are not exactly sure how the names are typed out. 
 [-i](https://qpeng.org/computer/grep.htm#:~:text=The%20%2Dc%20option%20tells%20grep,of%20%22boo%22%20in%20a_file.&text=An%20option%20more%20useful%20for,is%20%2Di%2C%20ignore%20case.)
 
 ```
 grep -c -i "HAM" grep-results.txt
 4
 ```
-- This one finds the files that have the string in them without being case sensitive. Instead of returning the specific path files it returns the number of files that exist. This is helpful if you need to find the number of possible files that the string occurs in without worrying about upper or lower case letters. 
+- This one finds the files that have the string in them without being case sensitive. Instead of returning the specific path files, it returns the number of files that exist. This is helpful if you need to find the number of possible files that the string occurs in without worrying about upper or lower case letters. 
 [-c -i](https://qpeng.org/computer/grep.htm#:~:text=The%20%2Dc%20option%20tells%20grep,of%20%22boo%22%20in%20a_file.&text=An%20option%20more%20useful%20for,is%20%2Di%2C%20ignore%20case.)
 
 
