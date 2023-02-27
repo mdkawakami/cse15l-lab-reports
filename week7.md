@@ -38,9 +38,14 @@ Now out of nano, in the command line. I use <^r> to find the javac and java comm
 
 
 9. Commit and push the resulting change to your Github account 
+ 
+In order to commit the change, in the terminal I used `git add List` <tab> and .java to get `git add ListExamples.java`. After running that I used `git commit -m "updated yay"` so that it would display the message. Lastly, in oder to push the edits to the main branch I used `git push origin main` in order for the main branch to be fully updated. 
+ 
 ![](commit.png)
 ![](push.png)
 ![updated yay](updatedyay.png)
 
-
+Notes/reminders: 
+ 
+To delete a repository such as lab7 through the command line you use `git rm -fr lab7` 
 
