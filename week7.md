@@ -4,11 +4,21 @@
 
 4. Log into ieng6
 
+
+Keys pressed:
+```
+<^r>
+<ssh>
+<enter>
+```
+
 In order to find the command to log into my ieng6 account I hit <^r> which is searching through my history. In this command, I typed <ssh> and the command I have used previously to log in came up. With this, I am able to find previous commands rather than typing them through from the start. 
  
 ![](^r.png)
 
 5. Clone your fork of the repository from your GitHub account 
+ 
+ 
   
 After opening the repository in GitHub, I forked the repository by hitting the fork button on the right top-hand side. Then from here, I copied the link that is given through the SSH URL when you go to the green code box. Then from here in the command, I typed `git clone` and <^v> to paste the URL.  
   
