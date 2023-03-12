@@ -49,6 +49,18 @@ In the command line I again used the <^r> and typed in javac to find `javac -cp 
 
 ## 7. Edit the code file to fix the failing test 
   
+Keys Pressed: 
+```
+nano List 
+<tab> 
+.java
+ <^w> 
+ <up>
+ <up>
+ <^o>
+ <enter>
+ <^x> 
+```
 In order to fix the code I figured out what was causing the error in the actual code. In the command line, I typed `nano ` and then `List` <tab> and then typed .java to get `ListExamples.java`. Then in nano, I used <^w> to search for the return result. Next, I hit arrow <up><up> to get to line 43 where I found the error. Then I went in and changed index1 += 1 to index2 += 1. 
 
 After I fixed the code I hit <^o> (to save the edits that were made) and then hit <enter>. After I hit <^x> to exit out of nano.  
@@ -57,13 +69,32 @@ After I fixed the code I hit <^o> (to save the edits that were made) and then hi
 
 
 ## 8. Run the tests, demonstrating that they now succeed
-  
+
+Keys Pressed: 
+```
+<^r>
+javac 
+<enter>
+<^r>
+java 
+<enter>
+```
+ 
 Now out of nano, in the command line. I use <^r> to find the javac and java commands to complie the tester and run it once again. After running the test with the new edits on the code it passed the tests! 
   
 ![](junitOK.png)
 
 
 ## 9. Commit and push the resulting change to your GitHub account 
+ 
+Keys Pressed: 
+```
+git add List 
+<tab> 
+.java
+git commit -m "updated yay"
+git push origin main 
+```
  
 In order to commit the change, in the terminal I used `git add List` <tab> and .java to get `git add ListExamples.java`. After running that I used `git commit -m "updated yay"` so that it would display the message. Lastly, in order to push the edits to the main branch I used `git push origin main` in order for the main branch to be fully updated. 
  
