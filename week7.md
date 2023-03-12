@@ -17,15 +17,31 @@ In order to find the command to log into my ieng6 account I hit <^r> which is se
 ![](^r.png)
 
 ## 5. Clone your fork of the repository from your GitHub account 
- 
- 
+
+Keys Pressed:
+```
+git clone 
+command v (to paste)
+```
   
-After opening the repository in GitHub, I forked the repository by hitting the fork button on the right top-hand side. Then from here, I copied the link that is given through the SSH URL when you go to the green code box. Then from here in the command, I typed `git clone` and <^v> to paste the URL.  
+After opening the repository in GitHub, I forked the repository by hitting the fork button on the right top-hand side. Then from here, I copied the link that is given through the SSH URL when you go to the green code box. Then from here in the command, I typed `git clone` and <command v> to paste the URL.  
   
 ![](SSHurl.png)
 
 ## 6. Run the tests, demonstrating that they fail 
  
+Keys Pressed: 
+```
+<^r>
+javac
+<enter>
+javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
+<enter>
+<^r>
+java
+<enter>
+ListExamplesTests
+```
 In the command line I again used the <^r> and typed in javac to find `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` which is used to compile the tester. Then once again I used <^r> to search for the java command to run the tests, `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore`. Along with this I had to change the last one because it had been for a different file. So to the end of this command, I changed it to ListExamplesTests for it to run on this file. (showing that it had a failure) 
   
 ![](JunitFail.png)
