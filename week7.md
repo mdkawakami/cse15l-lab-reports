@@ -2,7 +2,7 @@
 
 ## Steps 4-9 from Lab 7
 
-`4. Log into ieng6`
+## 4. Log into ieng6
 
 
 Keys pressed:
@@ -16,7 +16,7 @@ In order to find the command to log into my ieng6 account I hit <^r> which is se
  
 ![](^r.png)
 
-5. Clone your fork of the repository from your GitHub account 
+## 5. Clone your fork of the repository from your GitHub account 
  
  
   
@@ -24,14 +24,14 @@ After opening the repository in GitHub, I forked the repository by hitting the f
   
 ![](SSHurl.png)
 
-6. Run the tests, demonstrating that they fail 
+## 6. Run the tests, demonstrating that they fail 
  
 In the command line I again used the <^r> and typed in javac to find `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` which is used to compile the tester. Then once again I used <^r> to search for the java command to run the tests, `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore`. Along with this I had to change the last one because it had been for a different file. So to the end of this command, I changed it to ListExamplesTests for it to run on this file. (showing that it had a failure) 
   
 ![](JunitFail.png)
 
 
-7. Edit the code file to fix the failing test 
+## 7. Edit the code file to fix the failing test 
   
 In order to fix the code I figured out what was causing the error in the actual code. In the command line, I typed `nano ` and then `List` <tab> and then typed .java to get `ListExamples.java`. Then in nano, I used <^w> to search for the return result. Next, I hit arrow <up><up> to get to line 43 where I found the error. Then I went in and changed index1 += 1 to index2 += 1. 
 
@@ -40,14 +40,14 @@ After I fixed the code I hit <^o> (to save the edits that were made) and then hi
 ![](fixingCode.png)
 
 
-8. Run the tests, demonstrating that they now succeed
+## 8. Run the tests, demonstrating that they now succeed
   
 Now out of nano, in the command line. I use <^r> to find the javac and java commands to complie the tester and run it once again. After running the test with the new edits on the code it passed the tests! 
   
 ![](junitOK.png)
 
 
-9. Commit and push the resulting change to your GitHub account 
+## 9. Commit and push the resulting change to your GitHub account 
  
 In order to commit the change, in the terminal I used `git add List` <tab> and .java to get `git add ListExamples.java`. After running that I used `git commit -m "updated yay"` so that it would display the message. Lastly, in order to push the edits to the main branch I used `git push origin main` in order for the main branch to be fully updated. 
  
