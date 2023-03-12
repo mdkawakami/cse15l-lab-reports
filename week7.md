@@ -2,7 +2,7 @@
 
 ## Steps 4-9 from Lab 7
 
-4. Log into ieng6
+`4. Log into ieng6`
 
 
 Keys pressed:
