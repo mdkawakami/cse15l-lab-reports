@@ -18,10 +18,19 @@ fi
 ![no file](test5.png)
 ![nested](test6.png)
 
-**Method Exists**
+**Class Checker**
 
+First creating a variable `CLASS_CHECKER` in bash script. Then using the backticks around what the variable is equal to. In order to check if there is a class name called ListExamples, you must use grep which is searching for a string of characters "class ListExamples" in the file. Then using the bash script variable you want to use the if statements in order to find if the file contains the class name or not. I had whatever was found using grep and comparing if that was equal to an empty string. If it did equal eachother then it meant that it was missing the class and would echo that it must have theclass name. 
 
-
+```
+CLASS_CHECKER=`grep "class ListExamples" ListExamples.java`
+if [[ $CLASS_CHECKER == "" ]]
+then 
+    echo "Must have a class ListExamples"
+    echo "partial credit - resubmit"
+    exit
+fi 
+```
 **Method Filter**
 
 ![filtermethod](test4.png)
