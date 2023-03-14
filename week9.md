@@ -62,12 +62,16 @@ then
 fi 
 ```
 
-
 **Compiles**
+
+Next you want to check that the files are compiling. 
+
+
 ![complies](test3.png)
 
 
-**Method Merge**
+**Testing**
+Here you want to run the JUnit tests on the student submissions and ensure that all the tests are passing. First making a bash script variable `TEST_OUTPUT` will take the results of running grep and finding if 
 
 
 **Method Passed**
